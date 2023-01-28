@@ -1,0 +1,113 @@
+.navbar {
+  background-image: url("../assets/images/banner.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 445px;
+  background-position: center;
+  color: #ffff;
+  min-height: 500px;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 24px;
+    padding: 10px;
+    min-width: 100%;
+    &__left {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex: 1;
+      &__menu {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        min-width: 400px;
+      }
+    }
+    &__right {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &__item {
+        list-style-type: none;
+        display: flex;
+        gap: 50px;
+      }
+    }
+  }
+  //end css menu
+
+  //start desc
+  &__desc {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding-top: 70px;
+    &__left {
+      &__text {
+        h3 {
+          font-size: 48px;
+          font-weight: bold;
+          line-height: 48px;
+        }
+        p {
+          font-size: 36px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          width: 380px;
+          word-wrap: break-word;
+          font-weight: 300;
+        }
+        &__price {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          &__count {
+            color: rgba(217, 217, 217, 1);
+            text-decoration-line: line-through;
+          }
+          &__sales {
+            color: rgba(147, 129, 255, 1);
+            font-weight: bold;
+            font-size: 24px;
+          }
+        }
+      }
+      &__add {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+        &__features {
+          display: flex;
+          background-color: rgba(147, 129, 255, 1);
+          align-items: center;
+          padding: 10px 40px;
+          border-radius: 100px;
+          font-weight: 300;
+          span {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+    &__right {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      img {
+        width: 500px;
+        height: 500px;
+        padding-bottom: 50px;
+      }
+    }
+  }
+}
